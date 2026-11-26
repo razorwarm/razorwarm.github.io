@@ -1,0 +1,1507 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日韩诚人免费观看_日韩剧集在线观看指南_日韩电影与综艺条目</title>
+<meta name="description" content="日韩诚人免费观看页面整理日韩剧集、电影与综艺条目，包含精选片单、最新更新动态、类型分类入口、深度解析、观看顺序指南与社区评论，适合想系统了解日韩影视内容与观看路径的观众。">
+<meta name="keywords" content="日韩剧集、日韩电影、日韩综艺、剧集更新、观看指南">
+<style>
+:root{
+  --ink:#131519;
+  --ink-2:#3a3f47;
+  --ink-3:#6b717a;
+  --line:#e3e6ea;
+  --line-2:#eef0f3;
+  --bg:#f7f8fa;
+  --panel:#ffffff;
+  --brand:#1f4fd8;
+  --brand-dark:#1537a0;
+  --brand-soft:#e9efff;
+  --accent:#e2452f;
+  --accent-soft:#fdeceb;
+  --gold:#b7871f;
+  --gold-soft:#fdf4e1;
+  --teal:#0f8f7f;
+  --teal-soft:#e4f5f2;
+  --radius-s:6px;
+  --radius-m:10px;
+  --radius-l:16px;
+  --shadow-s:0 1px 2px rgba(19,21,25,.06);
+  --shadow-m:0 4px 16px rgba(19,21,25,.08);
+  --shadow-l:0 12px 32px rgba(19,21,25,.12);
+  --sticky-offset:118px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  font-size:15px;line-height:1.75;
+}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin:0 0 6px}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:4px}
+
+/* ============ 吸顶公告条 ============ */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:linear-gradient(90deg,#101a3a,#1f4fd8 60%,#2f6be8);
+  color:#fff;font-size:13px;
+}
+.announce-inner{
+  max-width:1360px;margin:0 auto;padding:0 20px;
+  height:38px;display:flex;align-items:center;gap:14px;overflow:hidden;
+}
+.announce-tag{
+  flex:none;background:#fff;color:var(--brand-dark);font-weight:700;
+  font-size:11px;letter-spacing:.06em;padding:2px 8px;border-radius:4px;
+}
+.announce-track{display:flex;gap:26px;white-space:nowrap;overflow:hidden;flex:1}
+.announce-track span{opacity:.95}
+.announce-track b{color:#ffd76a;font-weight:700}
+.announce-more{flex:none;color:#fff;font-size:12px;opacity:.85;border-bottom:1px dashed rgba(255,255,255,.6)}
+.announce-more:hover{opacity:1;text-decoration:none}
+
+/* ============ 页头 ============ */
+.site-header{
+  position:sticky;top:38px;z-index:55;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow-s);
+}
+.header-inner{
+  max-width:1360px;margin:0 auto;padding:0 20px;
+  height:80px;display:flex;align-items:center;gap:26px;
+}
+.logo{display:flex;align-items:center;gap:10px;flex:none;color:var(--ink)}
+.logo:hover{text-decoration:none}
+.logo-mark{width:38px;height:38px;flex:none}
+.logo-text{display:flex;flex-direction:column;line-height:1.15}
+.logo-text strong{font-size:18px;letter-spacing:.02em}
+.logo-text small{font-size:10.5px;color:var(--ink-3);letter-spacing:.14em;font-weight:500}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.main-nav a{
+  color:var(--ink-2);font-size:14px;padding:7px 11px;border-radius:var(--radius-s);
+  font-weight:500;white-space:nowrap;
+}
+.main-nav a:hover{background:var(--brand-soft);color:var(--brand-dark);text-decoration:none}
+.main-nav a.is-active{background:var(--brand);color:#fff}
+.header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-box{position:relative}
+.search-box input{
+  width:190px;height:36px;border:1px solid var(--line);border-radius:18px;
+  padding:0 14px;font-size:13px;background:#fff;color:var(--ink);
+}
+.search-box input:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft)}
+.search-hint{
+  position:absolute;left:0;right:0;top:42px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-m);box-shadow:var(--shadow-m);padding:8px;display:none;font-size:13px;z-index:70;
+}
+.search-hint.is-open{display:block}
+.search-hint a{display:block;padding:6px 8px;border-radius:4px;color:var(--ink-2)}
+.search-hint a:hover{background:var(--brand-soft);text-decoration:none}
+.search-hint .empty{color:var(--ink-3);padding:6px 8px}
+.btn-ghost{
+  height:36px;padding:0 16px;border-radius:18px;border:1px solid var(--brand);
+  background:#fff;color:var(--brand);font-size:13px;font-weight:600;
+}
+.btn-ghost:hover{background:var(--brand);color:#fff}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:7px 10px;color:var(--ink-2);font-size:13px}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  background:radial-gradient(1200px 420px at 78% -10%,#dbe4ff 0%,transparent 60%),
+             linear-gradient(160deg,#0d1530 0%,#152a63 52%,#1f4fd8 100%);
+  color:#fff;
+}
+.hero-inner{
+  max-width:1360px;margin:0 auto;padding:56px 20px 64px;
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px;align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.14em;
+  color:#a9c0ff;border:1px solid rgba(169,192,255,.42);padding:5px 12px;border-radius:20px;margin-bottom:20px;
+}
+.hero-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:#ffd76a}
+.hero h1{
+  font-size:clamp(30px,4.4vw,48px);letter-spacing:.01em;margin-bottom:18px;font-weight:800;
+}
+.hero-desc{
+  font-size:15.5px;color:#cdd8f5;max-width:520px;margin-bottom:26px;line-height:1.85;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 24px;border-radius:24px;
+  background:#fff;color:var(--brand-dark);font-weight:700;font-size:15px;border:none;
+}
+.btn-primary:hover{background:#ffd76a;color:#101a3a;text-decoration:none}
+.btn-line{
+  display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 24px;border-radius:24px;
+  border:1px solid rgba(255,255,255,.48);color:#fff;font-size:15px;font-weight:600;
+}
+.btn-line:hover{background:rgba(255,255,255,.12);text-decoration:none}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap}
+.hero-stats div{font-size:12.5px;color:#9fb2dd}
+.hero-stats b{display:block;font-size:22px;color:#fff;font-weight:800;line-height:1.2}
+.hero-visual{position:relative;min-height:320px}
+.poster-stack{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px}
+.poster-stack figure{
+  margin:0;border-radius:var(--radius-m);overflow:hidden;position:relative;
+  border:1px solid rgba(255,255,255,.16);box-shadow:var(--shadow-l);background:#0a1024;
+}
+.poster-stack figure:nth-child(1){transform:translateY(14px)}
+.poster-stack figure:nth-child(2){transform:translateY(-10px)}
+.poster-stack figure:nth-child(3){transform:translateY(-4px)}
+.poster-stack figure:nth-child(4){transform:translateY(20px)}
+.poster-stack img{width:100%;height:100%;object-fit:cover;opacity:.92}
+.poster-stack figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:8px 10px;font-size:11.5px;
+  background:linear-gradient(transparent,rgba(6,10,24,.9));color:#e6ecff;
+}
+.hero-badge{
+  position:absolute;right:-6px;top:-14px;background:#ffd76a;color:#101a3a;
+  font-size:12px;font-weight:800;padding:6px 12px;border-radius:16px;box-shadow:var(--shadow-m);
+  transform:rotate(4deg);z-index:3;
+}
+
+/* ============ 布局 ============ */
+.layout{
+  max-width:1360px;margin:0 auto;padding:34px 20px 60px;
+  display:grid;grid-template-columns:186px minmax(0,1fr) 268px;gap:30px;align-items:start;
+}
+.channel-col{position:sticky;top:var(--sticky-offset)}
+.channel-nav{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:14px 10px;box-shadow:var(--shadow-s);
+}
+.channel-nav h2{
+  font-size:12px;letter-spacing:.12em;color:var(--ink-3);font-weight:700;
+  padding:0 10px 10px;border-bottom:1px solid var(--line-2);margin-bottom:8px;
+}
+.channel-nav ul{list-style:none;padding:0;margin:0}
+.channel-nav li{margin:0}
+.channel-nav a{
+  display:flex;justify-content:space-between;align-items:center;gap:6px;
+  padding:8px 10px;border-radius:var(--radius-s);color:var(--ink-2);font-size:13.5px;
+}
+.channel-nav a:hover{background:var(--brand-soft);color:var(--brand-dark);text-decoration:none}
+.channel-nav a .cnt{font-size:11px;color:var(--ink-3);font-weight:500}
+.channel-nav a:hover .cnt{color:var(--brand-dark)}
+.channel-note{
+  margin-top:14px;background:var(--gold-soft);border:1px solid #f0e0bb;border-radius:var(--radius-m);
+  padding:12px;font-size:12.5px;color:#7a5a12;line-height:1.7;
+}
+.channel-note b{display:block;margin-bottom:4px;color:#5c4209}
+
+.main-col{min-width:0}
+.side-col{position:sticky;top:var(--sticky-offset);display:flex;flex-direction:column;gap:20px}
+
+/* ============ 通用板块 ============ */
+section[id]{scroll-margin-top:var(--sticky-offset)}
+.block{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-l);
+  padding:26px 26px 24px;margin-bottom:26px;box-shadow:var(--shadow-s);
+}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:6px;flex-wrap:wrap}
+.block-head h2{font-size:20px;letter-spacing:.01em}
+.block-head .more{font-size:13px;color:var(--ink-3);font-weight:500}
+.block-head .more:hover{color:var(--brand);text-decoration:none}
+.block-sub{font-size:13px;color:var(--ink-3);margin:4px 0 18px}
+.tag{
+  display:inline-block;font-size:11.5px;line-height:1.6;padding:1px 8px;border-radius:4px;
+  background:var(--line-2);color:var(--ink-2);font-weight:500;white-space:nowrap;
+}
+.tag-blue{background:var(--brand-soft);color:var(--brand-dark)}
+.tag-red{background:var(--accent-soft);color:#b53521}
+.tag-gold{background:var(--gold-soft);color:#8a6512}
+.tag-teal{background:var(--teal-soft);color:#0a6b5e}
+
+/* 概览 */
+.overview p{color:var(--ink-2);font-size:14.5px;line-height:1.9}
+.overview .lead{font-size:15.5px;color:var(--ink);border-left:3px solid var(--brand);padding-left:14px;margin-bottom:16px}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s;
+}
+.card:hover{box-shadow:var(--shadow-m);transform:translateY(-2px)}
+.card-thumb{position:relative;aspect-ratio:4/3;background:#e9ecf2}
+.card-thumb img{width:100%;height:100%;object-fit:cover}
+.card-score{
+  position:absolute;right:8px;top:8px;background:rgba(10,16,36,.86);color:#ffd76a;
+  font-size:12px;font-weight:800;padding:2px 8px;border-radius:10px;
+}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:15px;line-height:1.4}
+.card-meta{display:flex;flex-wrap:wrap;gap:5px}
+.card-point{font-size:12.8px;color:var(--ink-2);line-height:1.7;flex:1}
+.card-foot{
+  display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:var(--ink-3);
+  border-top:1px dashed var(--line);padding-top:8px;
+}
+.card-foot b{color:var(--accent);font-weight:700}
+
+/* 更新列表 */
+.update-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.update-list li{
+  display:grid;grid-template-columns:78px 1fr auto;gap:14px;align-items:baseline;
+  padding:11px 0;border-bottom:1px dashed var(--line-2);margin:0;
+}
+.update-list li:last-child{border-bottom:none}
+.update-list .u-time{font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.update-list .u-title{font-size:14px;font-weight:600;color:var(--ink)}
+.update-list .u-desc{font-size:12.8px;color:var(--ink-2);margin-top:2px;font-weight:400}
+.update-list .u-tag{font-size:11px;white-space:nowrap}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat-item{
+  border:1px solid var(--line);border-radius:var(--radius-m);padding:14px 14px 12px;
+  background:linear-gradient(180deg,#fff,#fafbfd);display:block;color:var(--ink);
+}
+.cat-item:hover{border-color:var(--brand);text-decoration:none;box-shadow:var(--shadow-s)}
+.cat-item strong{display:block;font-size:14.5px;margin-bottom:4px}
+.cat-item span{font-size:12px;color:var(--ink-3);line-height:1.6}
+.cat-item .cat-count{display:inline-block;margin-top:8px;font-size:11px;color:var(--brand-dark);background:var(--brand-soft);padding:1px 7px;border-radius:4px}
+
+/* 深度解析 */
+.deep h3{font-size:16.5px;margin:22px 0 8px;padding-left:11px;border-left:4px solid var(--brand);line-height:1.4}
+.deep h3:first-of-type{margin-top:6px}
+.deep p{font-size:14.4px;color:var(--ink-2);line-height:1.92}
+.deep ul{font-size:14.2px;color:var(--ink-2);line-height:1.85}
+.deep ul li::marker{color:var(--brand)}
+.compare-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0 14px}
+.compare-table th,.compare-table td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+.compare-table th{background:#f3f6fc;color:var(--ink);font-weight:700;white-space:nowrap}
+.compare-table td{color:var(--ink-2);line-height:1.7}
+
+/* 观看顺序 */
+.path-steps{list-style:none;padding:0;margin:0;counter-reset:step}
+.path-steps li{
+  counter-increment:step;position:relative;padding:0 0 18px 46px;margin:0;
+  border-left:2px solid var(--line);margin-left:16px;
+}
+.path-steps li:last-child{border-left-color:transparent;padding-bottom:0}
+.path-steps li::before{
+  content:counter(step);position:absolute;left:-17px;top:-2px;width:32px;height:32px;border-radius:50%;
+  background:var(--brand);color:#fff;font-size:13px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+.path-steps strong{display:block;font-size:14.5px;margin-bottom:3px}
+.path-steps p{margin:0;font-size:13.4px;color:var(--ink-2);line-height:1.75}
+
+/* FAQ */
+.faq details{
+  border:1px solid var(--line);border-radius:var(--radius-m);margin-bottom:10px;background:#fff;overflow:hidden;
+}
+.faq details[open]{border-color:#c3d1f5;box-shadow:var(--shadow-s)}
+.faq summary{
+  cursor:pointer;padding:13px 16px;font-size:14.5px;font-weight:600;color:var(--ink);
+  list-style:none;position:relative;padding-right:42px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:18px;color:var(--brand);font-weight:400;line-height:1;
+}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{padding:0 16px 15px;font-size:13.8px;color:var(--ink-2);line-height:1.85;border-top:1px dashed var(--line-2);padding-top:12px;margin-top:-1px}
+
+/* 评论 */
+.comment-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.comment{
+  border:1px solid var(--line);border-radius:var(--radius-m);padding:12px 14px;background:#fcfdff;
+}
+.comment-top{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;color:#fff;font-size:11.5px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;background:var(--brand);
+}
+.comment-top b{font-size:13px;font-weight:600}
+.comment-top .c-time{margin-left:auto;font-size:11px;color:var(--ink-3)}
+.comment p{margin:0;font-size:13.2px;color:var(--ink-2);line-height:1.75}
+.comment .c-ref{font-size:11.5px;color:var(--brand-dark);margin-top:6px;display:inline-block}
+
+/* 资讯 */
+.news-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.news-item{display:grid;grid-template-columns:112px 1fr;gap:12px;align-items:start}
+.news-item img{width:112px;height:76px;object-fit:cover;border-radius:var(--radius-s)}
+.news-item h3{font-size:13.8px;line-height:1.45;margin-bottom:4px}
+.news-item time{font-size:11.5px;color:var(--ink-3);display:block;margin-bottom:3px}
+.news-item p{font-size:12.5px;color:var(--ink-2);margin:0;line-height:1.65}
+
+/* 相关推荐 */
+.rel-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rel-tags a{
+  display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:7px 13px;border-radius:18px;
+  background:#f2f5fb;color:var(--ink-2);border:1px solid transparent;
+}
+.rel-tags a:hover{background:var(--brand-soft);color:var(--brand-dark);border-color:#c9d7fa;text-decoration:none}
+.rel-tags a i{font-style:normal;font-size:11px;color:var(--ink-3)}
+
+/* 榜单 */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rank}
+.rank-list li{
+  counter-increment:rank;display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;
+  padding:9px 0;border-bottom:1px dashed var(--line-2);margin:0;
+}
+.rank-list li:last-child{border-bottom:none}
+.rank-list li::before{
+  content:counter(rank);font-size:13px;font-weight:800;color:var(--ink-3);text-align:center;
+  width:24px;height:24px;line-height:24px;border-radius:6px;background:#f2f4f8;
+}
+.rank-list li:nth-child(-n+3)::before{background:var(--brand);color:#fff}
+.rank-list .r-name{font-size:13.8px;font-weight:600}
+.rank-list .r-sub{font-size:11.5px;color:var(--ink-3);font-weight:400;display:block}
+.rank-list .r-val{font-size:12px;color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* 侧栏 */
+.side-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:16px 16px 14px;box-shadow:var(--shadow-s);
+}
+.side-card h3{font-size:14px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line-2);display:flex;justify-content:space-between;align-items:center}
+.side-card h3 span{font-size:11px;color:var(--ink-3);font-weight:500}
+.side-list{list-style:none;padding:0;margin:0}
+.side-list li{display:flex;gap:9px;align-items:baseline;padding:7px 0;border-bottom:1px dashed var(--line-2);margin:0;font-size:13px}
+.side-list li:last-child{border-bottom:none}
+.side-list .num{font-size:11px;font-weight:800;color:var(--brand);flex:none;width:16px}
+.side-list a{color:var(--ink-2);line-height:1.5}
+.side-list a:hover{color:var(--brand-dark)}
+.side-list .s-meta{display:block;font-size:11px;color:var(--ink-3);font-weight:400}
+.timeline{list-style:none;padding:0 0 0 14px;margin:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 13px 10px;margin:0;font-size:12.5px;color:var(--ink-2)}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{
+  content:"";position:absolute;left:-19px;top:6px;width:8px;height:8px;border-radius:50%;
+  background:#fff;border:2px solid var(--brand);
+}
+.timeline time{display:block;font-size:11px;color:var(--ink-3);margin-bottom:2px}
+.side-quote{
+  background:linear-gradient(150deg,#101a3a,#1f4fd8);color:#fff;border:none;
+}
+.side-quote h3{color:#fff;border-bottom-color:rgba(255,255,255,.2)}
+.side-quote p{font-size:12.8px;color:#cfd9f5;line-height:1.8;margin:0}
+.side-quote .who{font-size:11.5px;color:#ffd76a;margin-top:8px;display:block}
+.trust-list{list-style:none;padding:0;margin:0;font-size:12.5px}
+.trust-list li{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px dashed var(--line-2);margin:0;color:var(--ink-2)}
+.trust-list li:last-child{border-bottom:none}
+.trust-list b{color:var(--ink);font-weight:700}
+.trust-list .lv{font-size:11px;padding:0 6px;border-radius:4px;background:var(--teal-soft);color:#0a6b5e;font-weight:600}
+
+/* 页尾 */
+.site-footer{background:#0d1322;color:#b9c3d8;margin-top:10px;font-size:13px}
+.footer-inner{max-width:1360px;margin:0 auto;padding:44px 20px 26px}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer-brand{display:flex;align-items:center;gap:10px;color:#fff;margin-bottom:12px}
+.footer-brand strong{font-size:16px}
+.footer-about p{font-size:12.8px;line-height:1.85;color:#94a1bd;margin:0 0 10px}
+.footer-col h4{font-size:13px;color:#fff;margin-bottom:12px;letter-spacing:.04em}
+.footer-col ul{list-style:none;padding:0;margin:0}
+.footer-col li{margin:0 0 8px}
+.footer-col a{color:#94a1bd;font-size:12.8px}
+.footer-col a:hover{color:#fff;text-decoration:none}
+.footer-bottom{padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:#6f7c96}
+.footer-bottom .disclaimer{max-width:760px;line-height:1.8}
+.footer-bottom a{color:#94a1bd}
+
+/* 响应式 */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr) 240px;gap:22px}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 250px;gap:22px}
+  .channel-col{grid-column:1/-1;position:static;order:-1}
+  .channel-nav{padding:10px}
+  .channel-nav h2{display:none}
+  .channel-nav ul{display:flex;flex-wrap:wrap;gap:6px}
+  .channel-nav a{padding:6px 11px;background:#f2f5fb;border-radius:16px;font-size:13px}
+  .channel-nav a .cnt{display:none}
+  .channel-note{display:none}
+  .hero-inner{grid-template-columns:1fr;gap:34px;padding:44px 20px 50px}
+  .hero-visual{min-height:260px;max-width:520px}
+  .main-nav{display:none}
+  .main-nav.is-open{
+    display:flex;position:absolute;left:0;right:0;top:80px;background:#fff;
+    padding:12px 16px;border-bottom:1px solid var(--line);box-shadow:var(--shadow-m);
+    gap:6px;z-index:50;
+  }
+  .nav-toggle{display:inline-block}
+  .header-inner{position:relative;gap:14px}
+  .news-list{grid-template-columns:1fr}
+  .comment-list{grid-template-columns:1fr}
+}
+@media (max-width:740px){
+  :root{--sticky-offset:104px}
+  .announce-inner{height:34px;padding:0 12px;font-size:12px;gap:8px}
+  .announce-more{display:none}
+  .site-header{top:34px}
+  .header-inner{height:70px;padding:0 12px;gap:10px}
+  .logo-text small{display:none}
+  .logo-text strong{font-size:16px}
+  .logo-mark{width:32px;height:32px}
+  .main-nav.is-open{top:70px}
+  .search-box input{width:120px;height:32px;font-size:12px}
+  .btn-ghost{height:32px;padding:0 12px;font-size:12px}
+  .hero-inner{padding:32px 14px 40px}
+  .hero h1{font-size:28px}
+  .hero-desc{font-size:14px}
+  .hero-actions{gap:10px}
+  .btn-primary,.btn-line{height:42px;padding:0 18px;font-size:14px}
+  .hero-stats{gap:18px}
+  .hero-stats b{font-size:18px}
+  .poster-stack{grid-template-columns:1fr 1fr;gap:9px}
+  .layout{grid-template-columns:1fr;padding:20px 12px 40px;gap:18px}
+  .side-col{position:static}
+  .block{padding:18px 15px 18px;border-radius:12px;margin-bottom:18px}
+  .block-head h2{font-size:17px}
+  .card-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr;gap:9px}
+  .cat-item{padding:11px}
+  .cat-item strong{font-size:13.5px}
+  .cat-item span{font-size:11.5px}
+  .update-list li{grid-template-columns:64px 1fr;gap:10px}
+  .update-list .u-tag{grid-column:2;justify-self:start;margin-top:-2px}
+  .news-item{grid-template-columns:88px 1fr;gap:10px}
+  .news-item img{width:88px;height:62px}
+  .compare-table{font-size:12.5px;display:block;overflow-x:auto}
+  .deep p,.deep ul{font-size:13.8px}
+  .footer-inner{padding:32px 14px 20px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:22px}
+  .footer-about{grid-column:1/-1}
+  .rel-tags a{font-size:12px;padding:6px 11px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce">
+  <div class="announce-inner">
+    <span class="announce-tag">更新</span>
+    <div class="announce-track">
+      <span><b>11 月 25 日</b>新增 14 条日韩剧集条目</span>
+      <span>《静海回声》第 8 集已上线</span>
+      <span>冬季档日剧 6 部定档 12 月</span>
+      <span>《南山食堂》第 2 季条目解封</span>
+    </div>
+    <a class="announce-more" href="/#updates">查看全部</a>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/#top" aria-label="日韩诚人免费观看 首页">
+      <svg class="logo-mark" viewBox="0 0 48 48" role="img" aria-label="品牌标志">
+        <defs>
+          <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#1f4fd8"/>
+            <stop offset="1" stop-color="#2f6be8"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#lg1)"/>
+        <path d="M20 15.5 34 24 20 32.5Z" fill="#fff"/>
+        <circle cx="14" cy="24" r="3.2" fill="#ffd76a"/>
+        <rect x="10" y="33" width="28" height="2.6" rx="1.3" fill="#ffffff" opacity=".55"/>
+      </svg>
+      <span class="logo-text">
+        <strong>日韩诚人免费观看</strong>
+        <small>J&K DRAMA INDEX</small>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主导航">
+      <a href="/#top" class="is-active">首页</a>
+      <a href="/#pick">精选片单</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#category">类型分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">观看顺序</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">社区评论</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input id="searchInput" type="search" placeholder="搜索条目 / 类型" aria-label="站内条目搜索">
+        <div class="search-hint" id="searchHint" role="status" aria-live="polite"></div>
+      </div>
+      <button class="btn-ghost" type="button" id="randomPick">随机看一部</button>
+      <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="mainNav">菜单</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<div class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-eyebrow">日韩剧集 · 电影 · 综艺 条目索引</span>
+      <h1>日韩诚人免费观看</h1>
+      <p class="hero-desc">
+        按类型、档期与口碑整理日韩剧集、电影与综艺条目：每一条都写明它是什么、
+        适合谁看、更新到第几集，以及同类型里更值得先开的那一部。
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="/#pick">进入精选片单</a>
+        <a class="btn-line" href="/#updates">看今天更新了什么</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>1,286</b>收录条目</div>
+        <div><b>14</b>今日新增</div>
+        <div><b>9</b>类型频道</div>
+        <div><b>2026-11-25</b>数据基准日</div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <span class="hero-badge">本周焦点</span>
+      <div class="poster-stack">
+        <figure>
+          <img src="https://picsum.photos/seed/jh-drama-jinghai/400/300" width="400" height="300" alt="《静海回声》剧集封面" loading="lazy">
+          <figcaption>静海回声 · 悬疑</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/seed/jh-movie-nanshan/400/300" width="400" height="300" alt="《南山食堂》电影海报" loading="lazy">
+          <figcaption>南山食堂 · 治愈</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/seed/jh-variety-dongjing/400/300" width="400" height="300" alt="东京深夜电台综艺画面" loading="lazy">
+          <figcaption>东京深夜电台 · 综艺</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/seed/jh-drama-hanlu/400/300" width="400" height="300" alt="《寒露之约》剧集封面" loading="lazy">
+          <figcaption>寒露之约 · 古装</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 主体三栏 -->
+<div class="layout">
+
+  <!-- 左频道栏 -->
+  <aside class="channel-col">
+    <nav class="channel-nav" aria-label="类型频道">
+      <h2>类型频道</h2>
+      <ul>
+        <li><a href="/#category">悬疑推理<span class="cnt">186</span></a></li>
+        <li><a href="/#category">都市情感<span class="cnt">214</span></a></li>
+        <li><a href="/#category">古装时代<span class="cnt">132</span></a></li>
+        <li><a href="/#category">医疗职场<span class="cnt">97</span></a></li>
+        <li><a href="/#category">治愈美食<span class="cnt">108</span></a></li>
+        <li><a href="/#category">青春校园<span class="cnt">121</span></a></li>
+        <li><a href="/#category">综艺真人秀<span class="cnt">156</span></a></li>
+        <li><a href="/#category">动画剧场版<span class="cnt">88</span></a></li>
+        <li><a href="/#rank">高分电影<span class="cnt">184</span></a></li>
+      </ul>
+    </nav>
+    <div class="channel-note">
+      <b>本期观看提示</b>
+      冬季档日剧 12 月起陆续开播，长剧集先看前 3 集判断节奏，再决定是否追更。
+    </div>
+  </aside>
+
+  <!-- 中主内容 -->
+  <main class="main-col">
+
+    <!-- 1. 主题领域概览 -->
+    <section class="block overview" id="overview">
+      <div class="block-head">
+        <h2>日韩影视内容概览</h2>
+        <a class="more" href="/#deep">看深度解析 →</a>
+      </div>
+      <p class="block-sub">从剧集、电影到综艺，先弄清楚这个领域里到底有哪些方向值得投入时间。</p>
+      <p class="lead">
+        日韩诚人免费观看所指向的内容，大致可以分成三条主线：日韩剧集、日韩电影、日韩综艺。
+        三者的节奏、集数结构与观看方式差别很大，混在一起比较容易踩坑。
+      </p>
+      <p>
+        剧集是最主要的一块。日剧通常 10 集左右、单集 45 分钟，节奏紧凑，一个季度就是一部完整故事；
+        韩剧多为 12 至 16 集，单集 60 至 70 分钟，中段容易注水，但结局往往收束得比较完整。
+        近年悬疑推理、医疗职场、都市情感这三类占比最高，古装时代剧则集中在少数几家制作方手里。
+      </p>
+      <p>
+        电影方向更依赖导演和演员组合。日本电影偏生活流与作者表达，节奏慢、留白多；
+        韩国电影在犯罪、社会现实题材上类型化程度更高，叙事推进更直接。
+        想看单部作品、一次看完的观众，从电影入手比追长剧更省时间。
+      </p>
+      <p>
+        综艺是近两年增长最快的一块。日本综艺偏棚内企划与观察类，韩国综艺偏户外任务与真人秀，
+        单集时长从 40 分钟到 100 分钟不等。适合通勤、做饭时随手播放，对连续性要求低。
+        如果你刚开始接触，建议先按类型锁定一条主线，而不是同时开五六部。
+      </p>
+    </section>
+
+    <!-- 2. 精选内容推荐 -->
+    <section class="block" id="pick">
+      <div class="block-head">
+        <h2>精选片单：12 部当前值得开的条目</h2>
+        <a class="more" href="/#rank">看完整榜单 →</a>
+      </div>
+      <p class="block-sub">每条都写清楚它是什么类型、更新到哪、适合什么人先看。</p>
+      <div class="card-grid" id="pickGrid">
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-jinghai-01/400/300" width="400" height="300" alt="《静海回声》悬疑剧集封面" loading="lazy">
+            <span class="card-score">9.1</span>
+          </div>
+          <div class="card-body">
+            <h3>静海回声</h3>
+            <div class="card-meta"><span class="tag tag-blue">日剧</span><span class="tag">悬疑推理</span><span class="tag">12 集</span></div>
+            <p class="card-point">海边小镇连环失踪案，双线叙事在第 3 集合流。已更新至第 8 集，适合喜欢慢热推理、能接受前两集铺垫的观众。</p>
+            <div class="card-foot"><span>更新至 08 集</span><b>本周热度 1</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-nanshan-02/400/300" width="400" height="300" alt="《南山食堂》治愈美食剧封面" loading="lazy">
+            <span class="card-score">8.8</span>
+          </div>
+          <div class="card-body">
+            <h3>南山食堂 第二季</h3>
+            <div class="card-meta"><span class="tag tag-teal">韩剧</span><span class="tag">治愈美食</span><span class="tag">10 集</span></div>
+            <p class="card-point">首尔老城区一间小馆子的日常，每集一位客人一道菜。第 2 季换了新厨师，节奏比第一季更快，适合下饭时看。</p>
+            <div class="card-foot"><span>全 10 集已上线</span><b>口碑 8.8</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-hanlu-03/400/300" width="400" height="300" alt="《寒露之约》古装剧封面" loading="lazy">
+            <span class="card-score">8.4</span>
+          </div>
+          <div class="card-body">
+            <h3>寒露之约</h3>
+            <div class="card-meta"><span class="tag tag-blue">韩剧</span><span class="tag">古装时代</span><span class="tag">16 集</span></div>
+            <p class="card-point">以朝鲜时代医女制度为背景，服化道考据扎实，前 4 集人物关系略密。喜欢历史细节和慢节奏权谋的观众可以优先。</p>
+            <div class="card-foot"><span>更新至 11 集</span><b>口碑 8.4</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-dongjing-04/400/300" width="400" height="300" alt="《东京深夜电台》综艺画面" loading="lazy">
+            <span class="card-score">8.9</span>
+          </div>
+          <div class="card-body">
+            <h3>东京深夜电台</h3>
+            <div class="card-meta"><span class="tag tag-gold">日综</span><span class="tag">观察类</span><span class="tag">周更</span></div>
+            <p class="card-point">每周三深夜播出的听众来信企划，主持人与嘉宾现场回应真实投稿。单集 45 分钟，不连续看也不影响。</p>
+            <div class="card-foot"><span>每周三 23:00 更新</span><b>口碑 8.9</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-baitai-05/400/300" width="400" height="300" alt="《白色台阶》医疗职场剧封面" loading="lazy">
+            <span class="card-score">8.7</span>
+          </div>
+          <div class="card-body">
+            <h3>白色台阶</h3>
+            <div class="card-meta"><span class="tag tag-blue">日剧</span><span class="tag">医疗职场</span><span class="tag">11 集</span></div>
+            <p class="card-point">急诊科新人医生的第一年，手术场景占比不高，更多写排班、交接与科室人际。适合想看职场线而非病例猎奇的观众。</p>
+            <div class="card-foot"><span>更新至 06 集</span><b>口碑 8.7</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-yeban-06/400/300" width="400" height="300" alt="《夜班书店》都市情感剧封面" loading="lazy">
+            <span class="card-score">8.2</span>
+          </div>
+          <div class="card-body">
+            <h3>夜班书店</h3>
+            <div class="card-meta"><span class="tag tag-teal">韩剧</span><span class="tag">都市情感</span><span class="tag">12 集</span></div>
+            <p class="card-point">24 小时书店里三段交错的感情线，台词密度高。第 5 集之后情绪才起来，前期需要一点耐心。</p>
+            <div class="card-foot"><span>全 12 集已上线</span><b>口碑 8.2</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-chuntian-07/400/300" width="400" height="300" alt="《春天不回信》日本电影海报" loading="lazy">
+            <span class="card-score">9.0</span>
+          </div>
+          <div class="card-body">
+            <h3>春天不回信</h3>
+            <div class="card-meta"><span class="tag tag-blue">日影</span><span class="tag">生活流</span><span class="tag">128 分钟</span></div>
+            <p class="card-point">小城邮局职员与一封迟到十年的信。节奏极慢，大量固定长镜头，适合能接受安静叙事的观众一次看完。</p>
+            <div class="card-foot"><span>单片 · 已上线</span><b>口碑 9.0</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-zuihou-08/400/300" width="400" height="300" alt="《最后一班渡轮》韩国电影海报" loading="lazy">
+            <span class="card-score">8.6</span>
+          </div>
+          <div class="card-body">
+            <h3>最后一班渡轮</h3>
+            <div class="card-meta"><span class="tag tag-red">韩影</span><span class="tag">犯罪现实</span><span class="tag">114 分钟</span></div>
+            <p class="card-point">港口小城的连环案件与地方记者调查线交织。类型化程度高，前 20 分钟就进入主线，适合想一次看完的观众。</p>
+            <div class="card-foot"><span>单片 · 已上线</span><b>口碑 8.6</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-xiaozhen-09/400/300" width="400" height="300" alt="《小镇问答王》韩国综艺画面" loading="lazy">
+            <span class="card-score">8.5</span>
+          </div>
+          <div class="card-body">
+            <h3>小镇问答王</h3>
+            <div class="card-meta"><span class="tag tag-gold">韩综</span><span class="tag">知识问答</span><span class="tag">周更</span></div>
+            <p class="card-point">到韩国各地小镇做街头知识问答，答对者拿地方特产。单集 70 分钟，节奏轻松，适合和家人一起看。</p>
+            <div class="card-foot"><span>每周五更新</span><b>口碑 8.5</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-qingchun-10/400/300" width="400" height="300" alt="《十七岁的信号灯》青春校园剧封面" loading="lazy">
+            <span class="card-score">8.1</span>
+          </div>
+          <div class="card-body">
+            <h3>十七岁的信号灯</h3>
+            <div class="card-meta"><span class="tag tag-blue">日剧</span><span class="tag">青春校园</span><span class="tag">10 集</span></div>
+            <p class="card-point">乡下高中最后一个学期，五人小组准备一场没人看的毕业演出。轻量、干净，适合想找轻松校园线的观众。</p>
+            <div class="card-foot"><span>更新至 07 集</span><b>口碑 8.1</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-donghua-11/400/300" width="400" height="300" alt="《雾港旅人》动画剧场版海报" loading="lazy">
+            <span class="card-score">8.9</span>
+          </div>
+          <div class="card-body">
+            <h3>雾港旅人 剧场版</h3>
+            <div class="card-meta"><span class="tag tag-blue">日影</span><span class="tag">动画剧场版</span><span class="tag">106 分钟</span></div>
+            <p class="card-point">独立制作动画，一个旅人在雾港停留三天。画面偏手绘质感，配乐是最大亮点，适合在大屏或安静环境看。</p>
+            <div class="card-foot"><span>单片 · 已上线</span><b>口碑 8.9</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/jh-yuanzheng-12/400/300" width="400" height="300" alt="《远征厨房》韩国真人秀画面" loading="lazy">
+            <span class="card-score">8.3</span>
+          </div>
+          <div class="card-body">
+            <h3>远征厨房</h3>
+            <div class="card-meta"><span class="tag tag-gold">韩综</span><span class="tag">户外真人秀</span><span class="tag">周更</span></div>
+            <p class="card-point">四位厨师带着移动厨房走遍小城市，用当地食材做限定菜单。任务环节不多，重点在食材和人情。</p>
+            <div class="card-foot"><span>每周日更新</span><b>口碑 8.3</b></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3. 最新更新 -->
+    <section class="block" id="updates">
+      <div class="block-head">
+        <h2>最新更新与今日动态</h2>
+        <a class="more" href="/#news">相关资讯 →</a>
+      </div>
+      <p class="block-sub">以 2026 年 11 月 25 日为基准，近 30 天内的条目变动。</p>
+      <ul class="update-list">
+        <li>
+          <span class="u-time">今天 09:30</span>
+          <div>
+            <span class="u-title">静海回声</span>
+            <div class="u-desc">第 8 集上线，双线叙事正式合流，前七集埋的旧案线索在本集回收。</div>
+          </div>
+          <span class="tag tag-blue u-tag">日剧</span>
+        </li>
+        <li>
+          <span class="u-time">今天 08:10</span>
+          <div>
+            <span class="u-title">南山食堂 第二季</span>
+            <div class="u-desc">全 10 集一次性放出，第 6 集换厨师后的菜单评价分化明显。</div>
+          </div>
+          <span class="tag tag-teal u-tag">韩剧</span>
+        </li>
+        <li>
+          <span class="u-time">昨天 21:10</span>
+          <div>
+            <span class="u-title">东京深夜电台</span>
+            <div class="u-desc">本周企划为“写给十年前的自己”，现场回应了 6 封听众来信。</div>
+          </div>
+          <span class="tag tag-gold u-tag">日综</span>
+        </li>
+        <li>
+          <span class="u-time">昨天 18:40</span>
+          <div>
+            <span class="u-title">寒露之约</span>
+            <div class="u-desc">更新至第 11 集，医女制度线的关键判决提前，后续走向改动较大。</div>
+          </div>
+          <span class="tag tag-blue u-tag">韩剧</span>
+        </li>
+        <li>
+          <span class="u-time">11 月 23 日</span>
+          <div>
+            <span class="u-title">白色台阶</span>
+            <div class="u-desc">第 6 集上线，急诊科排班冲突线进入主线，单集时长延长至 58 分钟。</div>
+          </div>
+          <span class="tag tag-blue u-tag">日剧</span>
+        </li>
+        <li>
+          <span class="u-time">11 月 22 日</span>
+          <div>
+            <span class="u-title">最后一班渡轮</span>
+            <div class="u-desc">条目补充了幕后制作访谈，导演说明了港口实景拍摄的原因。</div>
+          </div>
+          <span class="tag tag-red u-tag">韩影</span>
+        </li>
+        <li>
+          <span class="u-time">11 月 20 日</span>
+          <div>
+            <span class="u-title">小镇问答王</span>
+            <div class="u-desc">节目组公布冬季特别篇规则：改为两人组队，问题范围扩到地方史。</div>
+          </div>
+          <span class="tag tag-gold u-tag">韩综</span>
+        </li>
+        <li>
+          <span class="u-time">11 月 18 日</span>
+          <div>
+            <span class="u-title">夜班书店</span>
+            <div class="u-desc">全 12 集上线完毕，结局段落引发关于第三段感情线的讨论。</div>
+          </div>
+          <span class="tag tag-teal u-tag">韩剧</span>
+        </li>
+        <li>
+          <span class="u-time">11 月 15 日</span>
+          <div>
+            <span class="u-title">雾港旅人 剧场版</span>
+            <div class="u-desc">新增简体字幕版本，片尾曲段落补充了制作团队名单。</div>
+          </div>
+          <span class="tag tag-blue u-tag">日影</span>
+        </li>
+        <li>
+          <span class="u-time">11 月 12 日</span>
+          <div>
+            <span class="u-title">十七岁的信号灯</span>
+            <div class="u-desc">更新至第 7 集，毕业演出排练线开始收束，配角戏份明显增加。</div>
+          </div>
+          <span class="tag tag-blue u-tag">日剧</span>
+        </li>
+        <li>
+          <span class="u-time">11 月 8 日</span>
+          <div>
+            <span class="u-title">远征厨房</span>
+            <div class="u-desc">第二站拍摄地公布，节目组确认本季共 12 集，无中途停播安排。</div>
+          </div>
+          <span class="tag tag-gold u-tag">韩综</span>
+        </li>
+        <li>
+          <span class="u-time">11 月 3 日</span>
+          <div>
+            <span class="u-title">春天不回信</span>
+            <div class="u-desc">条目补全了导演前作对照表，方便比较同一导演的叙事变化。</div>
+          </div>
+          <span class="tag tag-blue u-tag">日影</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section class="block" id="category">
+      <div class="block-head">
+        <h2>按类型找条目</h2>
+        <a class="more" href="/#rank">高分优先 →</a>
+      </div>
+      <p class="block-sub">八条主要垂类，直接对应你会搜索的类别词。</p>
+      <div class="cat-grid">
+        <a class="cat-item" href="/#pick">
+          <strong>悬疑推理</strong>
+          <span>双线叙事、旧案重启、封闭空间，慢热型居多。</span>
+          <span class="cat-count">186 条</span>
+        </a>
+        <a class="cat-item" href="/#pick">
+          <strong>都市情感</strong>
+          <span>职场与感情交叉，台词密度高，中段容易拖。</span>
+          <span class="cat-count">214 条</span>
+        </a>
+        <a class="cat-item" href="/#pick">
+          <strong>古装时代</strong>
+          <span>服化道考据与权谋线并重，前期人物关系较密。</span>
+          <span class="cat-count">132 条</span>
+        </a>
+        <a class="cat-item" href="/#pick">
+          <strong>医疗职场</strong>
+          <span>排班、交接、科室人际，病例猎奇成分较低。</span>
+          <span class="cat-count">97 条</span>
+        </a>
+        <a class="cat-item" href="/#pick">
+          <strong>治愈美食</strong>
+          <span>一集一道菜，单元结构，适合下饭与碎片时间。</span>
+          <span class="cat-count">108 条</span>
+        </a>
+        <a class="cat-item" href="/#pick">
+          <strong>青春校园</strong>
+          <span>轻量、干净，冲突集中在毕业与升学节点。</span>
+          <span class="cat-count">121 条</span>
+        </a>
+        <a class="cat-item" href="/#pick">
+          <strong>综艺真人秀</strong>
+          <span>棚内企划与户外任务两类，单集 40 至 100 分钟。</span>
+          <span class="cat-count">156 条</span>
+        </a>
+        <a class="cat-item" href="/#pick">
+          <strong>动画剧场版</strong>
+          <span>独立制作与院线长片，画面风格差异最大的一类。</span>
+          <span class="cat-count">88 条</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析 -->
+    <section class="block deep" id="deep">
+      <div class="block-head">
+        <h2>深度解析：日剧、韩剧与日韩电影到底差在哪</h2>
+      </div>
+      <p class="block-sub">不是比较谁更好，而是讲清楚结构差异，让你少花时间试错。</p>
+
+      <h3>一、集数结构决定了观看节奏</h3>
+      <p>
+        日剧主流是 10 至 11 集，单集 45 分钟左右，一个季度讲完一个完整故事。
+        这种结构的好处是几乎没有注水空间，第 1 集就要交代清楚主角处境和核心矛盾；
+        代价是配角线往往展开不足，很多支线只给两三个镜头就收掉。
+        韩剧主流是 12 至 16 集，单集 60 至 70 分钟，总时长大约是日剧的 2 倍，
+        所以中段（第 6 到第 10 集）最容易出现回忆、重复和配角加戏。
+      </p>
+      <p>
+        实际操作上，判断一部日剧值不值得追，看第 1 集是否在前 15 分钟立住主角目标就够了；
+        判断韩剧则要看第 5 集前后有没有明确的推进节点，如果第 6 集还在重复前三集的关系僵局，
+        后面大概率不会突然变好。
+      </p>
+
+      <h3>二、日影与韩影的叙事差异</h3>
+      <p>
+        日本电影偏生活流与作者表达，大量固定镜头、环境音和留白，冲突往往内化在人物状态里。
+        韩国电影在犯罪、社会现实题材上类型化程度更高，开场 20 分钟内通常就会给出明确的事件钩子，
+        叙事推进更直接，情绪落点也更外放。
+      </p>
+      <table class="compare-table">
+        <thead>
+          <tr><th>维度</th><th>日剧 / 日影</th><th>韩剧 / 韩影</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>常见集数</td><td>10 至 11 集，单集 45 分钟</td><td>12 至 16 集，单集 60 至 70 分钟</td></tr>
+          <tr><td>推进节奏</td><td>前 15 分钟立目标，后段收束快</td><td>前 2 集铺关系，中段易拖，结局较完整</td></tr>
+          <tr><td>配角线</td><td>篇幅少，常以留白处理</td><td>篇幅多，容易加戏</td></tr>
+          <tr><td>电影叙事</td><td>生活流、作者表达、留白多</td><td>类型化、钩子前置、情绪外放</td></tr>
+          <tr><td>适合场景</td><td>安静环境、一次看一两集</td><td>连续追更、能接受长单集</td></tr>
+        </tbody>
+      </table>
+
+      <h3>三、判断一个条目值不值得投入时间</h3>
+      <p>
+        先看类型是否和你已有的观看习惯匹配，再看集数和单集时长是否契合你的可用时间，
+        最后才看评分。评分高但类型不对的条目，投入产出比通常很低。
+      </p>
+      <ul>
+        <li><strong>时间预算优先：</strong>只有碎片时间就选单元结构的治愈美食或综艺，别开 16 集长剧。</li>
+        <li><strong>类型匹配优先：</strong>不看慢热推理的人，追悬疑剧大概率在第 3 集弃。</li>
+        <li><strong>完结状态优先：</strong>更新中的剧先看前 3 集判断，确认节奏再决定是否追更。</li>
+        <li><strong>制作方参考：</strong>同一制作方的作品在节奏和美术上通常有连续性，可作为次要依据。</li>
+      </ul>
+
+      <h3>四、综艺与剧集的消费策略不同</h3>
+      <p>
+        剧集需要连续投入，综艺则天然适合碎片时间。观察类日综单集独立，
+        从任何一集开始都不影响理解；户外真人秀韩综有固定成员关系，
+        建议从第一季前 3 集开始，先建立人物认知再挑主题集数看。
+        知识问答类综艺对连续性要求最低，适合做饭、通勤时播放。
+      </p>
+    </section>
+
+    <!-- 6. 观看顺序指南 -->
+    <section class="block" id="guide">
+      <div class="block-head">
+        <h2>观看顺序与消费路径</h2>
+      </div>
+      <p class="block-sub">第一次接触日韩内容，按这个顺序走，试错成本最低。</p>
+      <ol class="path-steps">
+        <li>
+          <strong>先用一部 10 集以内的日剧确认口味</strong>
+          <p>推荐从悬疑推理或医疗职场入手，这两类结构最清晰，前 15 分钟就能判断自己是否吃得下这个节奏。</p>
+        </li>
+        <li>
+          <strong>再用一部单片电影补齐类型认知</strong>
+          <p>想安静就选日本生活流，想一次看完有强钩子就选韩国犯罪现实题材。单片不占用连续时间，试错成本最低。</p>
+        </li>
+        <li>
+          <strong>确认类型偏好后，再开一部 12 至 16 集的韩剧</strong>
+          <p>此时你已经知道自己能接受多长的单集。韩剧中段容易拖，建议先看前 5 集，再决定是否继续。</p>
+        </li>
+        <li>
+          <strong>把综艺作为填充位</strong>
+          <p>通勤、做饭、睡前各放一部不同类型的综艺，观察类与知识问答类最省心，不需要记剧情。</p>
+        </li>
+        <li>
+          <strong>最后再进入古装时代与动画剧场版</strong>
+          <p>这两类门槛相对高：古装需要记人物关系，动画剧场版依赖画面和配乐欣赏习惯，放在口味稳定之后再碰更合适。</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="block faq" id="faq">
+      <div class="block-head">
+        <h2>常见问题</h2>
+      </div>
+      <p class="block-sub">围绕类型、更新与选择依据的真实问句。</p>
+
+      <details>
+        <summary>日剧一般多久更新一集？</summary>
+        <div class="ans">常规档期是每周一集，播出时间固定在工作日晚间或周末。一季 10 至 11 集，大约三个月播完。特别篇和跨季续作不按这个规律，需要单独看条目里的更新时间。</div>
+      </details>
+
+      <details>
+        <summary>韩剧和日剧在节奏上最大的区别是什么？</summary>
+        <div class="ans">日剧单集短、集数少，前 15 分钟就要立住主角目标；韩剧单集长、集数多，前两集主要铺人物关系，中段容易拖。判断韩剧是否值得追，看第 5 集前后有没有明确推进节点最有效。</div>
+      </details>
+
+      <details>
+        <summary>第一次接触日韩内容，从哪个条目开始看比较好？</summary>
+        <div class="ans">建议从 10 集以内的日剧开始，比如医疗职场的《白色台阶》或悬疑推理的《静海回声》。这两类结构清晰、前段信息密度高，能快速判断你是否适应这种节奏，试错成本比直接开 16 集长剧低得多。</div>
+      </details>
+
+      <details>
+        <summary>悬疑推理类的评判标准通常是什么？</summary>
+        <div class="ans">主要看三点：线索是否公平投放（观众有没有机会自己推出来）、双线或多线是否在合理节点合流、结局是否回收前面埋的关键伏笔。慢热本身不是缺点，但前两集如果连核心案件都没交代清楚，后面通常也很难补救。</div>
+      </details>
+
+      <details>
+        <summary>综艺和剧集可以同时追吗？会不会影响理解？</summary>
+        <div class="ans">完全可以。观察类日综和知识问答类韩综单集独立，不依赖前情；只有固定成员关系的户外真人秀建议从第一季前 3 集开始建立人物认知。剧集需要连续投入，综艺适合碎片时间，两者不冲突。</div>
+      </details>
+
+      <details>
+        <summary>古装时代剧为什么普遍评价分化？</summary>
+        <div class="ans">因为它的门槛在人物关系和制度背景，不在剧情本身。前 4 集通常要交代大量称谓、官职和家族关系，习惯快节奏的观众容易在这里放弃；而喜欢历史细节的观众恰恰认为这部分最有价值。评价分化主要来自观看预期不同。</div>
+      </details>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section class="block" id="comments">
+      <div class="block-head">
+        <h2>社区评论</h2>
+        <span class="more">近 7 天 214 条讨论</span>
+      </div>
+      <p class="block-sub">围绕具体条目和类型的真实讨论摘录。</p>
+      <div class="comment-list">
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#1f4fd8">林</span><b>林间小满</b><span class="c-time">今天 10:12</span></div>
+          <p>《静海回声》第 8 集把两条线合上了，前面第 3 集那个不起眼的便利店镜头原来是伏笔。这种公平投放线索的推理现在不多了。</p>
+          <span class="c-ref"># 静海回声</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#0f8f7f">陈</span><b>陈屿不吃香菜</b><span class="c-time">今天 09:40</span></div>
+          <p>南山食堂第二季换了厨师之后菜单风格变重了，第 6 集那道炖菜评价两极。我个人更喜欢第一季的清淡路线。</p>
+          <span class="c-ref"># 南山食堂 第二季</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#b7871f">周</span><b>周末补剧计划</b><span class="c-time">今天 08:55</span></div>
+          <p>东京深夜电台这周“写给十年前的自己”企划是真的好，45 分钟没有一句废话，通勤路上听刚好。</p>
+          <span class="c-ref"># 东京深夜电台</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#e2452f">许</span><b>许愿一场雪</b><span class="c-time">昨天 22:31</span></div>
+          <p>寒露之约第 11 集判决提前我有点意外，原著不是这个顺序。不过医女制度那条线拍得确实细，服化道没糊弄。</p>
+          <span class="c-ref"># 寒露之约</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#1f4fd8">苏</span><b>苏打水加冰</b><span class="c-time">昨天 21:08</span></div>
+          <p>白色台阶不算传统医疗剧，手术戏很少，更多写排班和交接班冲突。想看病例猎奇的可能会失望，但职场线很真实。</p>
+          <span class="c-ref"># 白色台阶</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#0f8f7f">何</span><b>何处是归途</b><span class="c-time">昨天 19:47</span></div>
+          <p>夜班书店第 5 集之后情绪才起来，前面四集我差点弃。第三段感情线收得有点急，整体还是能给 8 分。</p>
+          <span class="c-ref"># 夜班书店</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#b7871f">沈</span><b>沈默的看片人</b><span class="c-time">11 月 24 日 23:10</span></div>
+          <p>春天不回信全片几乎没有配乐，全靠环境音。这种处理在影院看很舒服，小屏幕上容易走神，建议戴耳机看。</p>
+          <span class="c-ref"># 春天不回信</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#e2452f">赵</span><b>赵小刀</b><span class="c-time">11 月 24 日 20:36</span></div>
+          <p>最后一班渡轮前 20 分钟就进主线，节奏在韩国犯罪片里算快的。港口实景加分，记者调查线稍微理想化了。</p>
+          <span class="c-ref"># 最后一班渡轮</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#1f4fd8">吴</span><b>吴桐树下</b><span class="c-time">11 月 24 日 18:02</span></div>
+          <p>小镇问答王冬季特别篇改两人组队，规则一改节奏快了不少。地方史题有点难，但答对拿特产的环节很治愈。</p>
+          <span class="c-ref"># 小镇问答王</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#0f8f7f">郑</span><b>郑在加班</b><span class="c-time">11 月 23 日 22:25</span></div>
+          <p>十七岁的信号灯就是标准青春校园线，没什么惊喜但看着很舒服。毕业演出那段排练戏比感情线好看。</p>
+          <span class="c-ref"># 十七岁的信号灯</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#b7871f">冯</span><b>冯家二少</b><span class="c-time">11 月 23 日 16:48</span></div>
+          <p>雾港旅人剧场版配乐是真的顶，手绘质感在大屏上看比小屏好太多。剧情偏淡，冲着故事去可能会觉得空。</p>
+          <span class="c-ref"># 雾港旅人 剧场版</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#e2452f">韩</span><b>韩梅梅的猫</b><span class="c-time">11 月 22 日 21:14</span></div>
+          <p>远征厨房第二站选在靠海的小城，用当地海鲜做限定菜单那集最好看。任务环节少反而是优点。</p>
+          <span class="c-ref"># 远征厨房</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#1f4fd8">杨</span><b>杨枝甘露少糖</b><span class="c-time">11 月 22 日 14:30</span></div>
+          <p>古装剧我一般先看前 4 集能不能撑住人物关系，撑不住就弃。寒露之约这点做得还行，称谓交代得比较清楚。</p>
+          <span class="c-ref"># 古装时代</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#0f8f7f">朱</span><b>朱砂痣与白月光</b><span class="c-time">11 月 21 日 19:52</span></div>
+          <p>个人觉得韩剧 16 集中段注水是结构问题，不是编剧水平问题。现在会优先挑 12 集的看，弃剧率明显下降。</p>
+          <span class="c-ref"># 都市情感</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#b7871f">秦</span><b>秦岭以北</b><span class="c-time">11 月 21 日 11:06</span></div>
+          <p>治愈美食类我基本一集一道菜地看，不追连续剧情。南山食堂和远征厨房都可以当背景音，做饭时放很合适。</p>
+          <span class="c-ref"># 治愈美食</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#e2452f">于</span><b>于无声处</b><span class="c-time">11 月 20 日 23:41</span></div>
+          <p>悬疑推理我最在意线索是不是公平投放。静海回声这点做得不错，但也承认前两集确实慢，需要耐心。</p>
+          <span class="c-ref"># 悬疑推理</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#1f4fd8">刘</span><b>刘浪的日常</b><span class="c-time">11 月 20 日 15:27</span></div>
+          <p>白色台阶第 6 集延长到 58 分钟，排班冲突线终于进主线。医疗职场剧拍交接班比拍抢救更打动我。</p>
+          <span class="c-ref"># 白色台阶</span>
+        </div>
+        <div class="comment">
+          <div class="comment-top"><span class="avatar" style="background:#0f8f7f">顾</span><b>顾言不言语</b><span class="c-time">11 月 19 日 20:15</span></div>
+          <p>动画剧场版这一类风格差异太大，雾港旅人偏作者向，想看热闹的可能会失望。建议先看预告再决定。</p>
+          <span class="c-ref"># 动画剧场版</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section class="block" id="news">
+      <div class="block-head">
+        <h2>相关资讯</h2>
+      </div>
+      <p class="block-sub">近一个月内与条目、档期、规则相关的具体动态。</p>
+      <div class="news-list">
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/jh-news-dongji/600/400" width="600" height="400" alt="冬季档日剧定档发布会现场" loading="lazy">
+          <div>
+            <h3>冬季档日剧 6 部定档 12 月，医疗与悬疑各占两部</h3>
+            <time datetime="2026-11-24">2026-11-24</time>
+            <p>六部新剧集中在 12 月第一周开播，其中两部医疗职场、两部悬疑推理，另外两部为都市情感。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/jh-news-nanshan/600/400" width="600" height="400" alt="南山食堂第二季剧照" loading="lazy">
+          <div>
+            <h3>南山食堂第二季全 10 集上线，厨师更换成讨论焦点</h3>
+            <time datetime="2026-11-23">2026-11-23</time>
+            <p>第二季更换主厨角色，菜单风格由清淡转向重口，第 6 集后评价明显分化。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/jh-news-hanlu/600/400" width="600" height="400" alt="寒露之约古装场景" loading="lazy">
+          <div>
+            <h3>寒露之约第 11 集调整判决顺序，原著读者反应不一</h3>
+            <time datetime="2026-11-22">2026-11-22</time>
+            <p>剧集把关键判决提前一集，医女制度线的收束方式与原作不同，后续两集走向随之改动。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/jh-news-wenda/600/400" width="600" height="400" alt="小镇问答王街头录制现场" loading="lazy">
+          <div>
+            <h3>小镇问答王公布冬季特别篇规则：两人组队、题库扩至地方史</h3>
+            <time datetime="2026-11-20">2026-11-20</time>
+            <p>特别篇共 4 集，改为两人组队作答，问题范围从常识扩展到地方史与方言。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/jh-news-yedu/600/400" width="600" height="400" alt="夜班书店结局场景" loading="lazy">
+          <div>
+            <h3>夜班书店完结，第三段感情线收束方式引发讨论</h3>
+            <time datetime="2026-11-18">2026-11-18</time>
+            <p>全 12 集上线完毕，结局对第三段感情线处理较急，社区讨论集中在第 11 至 12 集。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/jh-news-wugang/600/400" width="600" height="400" alt="雾港旅人剧场版画面" loading="lazy">
+          <div>
+            <h3>雾港旅人剧场版补简体字幕，片尾名单同步更新</h3>
+            <time datetime="2026-11-15">2026-11-15</time>
+            <p>条目新增简体字幕版本，片尾曲段落补充完整制作团队名单，便于核对配乐与美术人员。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section class="block" id="related">
+      <div class="block-head">
+        <h2>相关推荐：延伸方向</h2>
+      </div>
+      <p class="block-sub">不是当下热播条目，而是同类型里可以继续挖的方向。</p>
+      <div class="rel-tags">
+        <a href="/#deep">双线叙事推理剧 <i>结构解析</i></a>
+        <a href="/#deep">单元结构美食剧 <i>下饭首选</i></a>
+        <a href="/#deep">医疗职场剧的排班线 <i>真实感来源</i></a>
+        <a href="/#guide">12 集韩剧与 16 集的取舍 <i>弃剧率</i></a>
+        <a href="/#deep">日本生活流电影 <i>长镜头与留白</i></a>
+        <a href="/#deep">韩国犯罪现实题材 <i>记者调查线</i></a>
+        <a href="/#pick">观察类日综企划 <i>单集独立</i></a>
+        <a href="/#guide">古装时代剧人物关系入门 <i>前 4 集</i></a>
+      </div>
+    </section>
+
+    <!-- 11. 热门榜单 -->
+    <section class="block" id="rank">
+      <div class="block-head">
+        <h2>本周热门榜单</h2>
+        <span class="more">截至 2026-11-25 09:00</span>
+      </div>
+      <p class="block-sub">按条目页浏览量排序，更新频率为每日一次。</p>
+      <ol class="rank-list">
+        <li><div><span class="r-name">静海回声</span><span class="r-sub">日剧 · 悬疑推理 · 更新至 08 集</span></div><span class="r-val">96,420</span></li>
+        <li><div><span class="r-name">南山食堂 第二季</span><span class="r-sub">韩剧 · 治愈美食 · 全 10 集</span></div><span class="r-val">88,170</span></li>
+        <li><div><span class="r-name">寒露之约</span><span class="r-sub">韩剧 · 古装时代 · 更新至 11 集</span></div><span class="r-val">74,305</span></li>
+        <li><div><span class="r-name">东京深夜电台</span><span class="r-sub">日综 · 观察类 · 每周三更新</span></div><span class="r-val">65,912</span></li>
+        <li><div><span class="r-name">最后一班渡轮</span><span class="r-sub">韩影 · 犯罪现实 · 单片</span></div><span class="r-val">58,640</span></li>
+        <li><div><span class="r-name">白色台阶</span><span class="r-sub">日剧 · 医疗职场 · 更新至 06 集</span></div><span class="r-val">52,088</span></li>
+        <li><div><span class="r-name">春天不回信</span><span class="r-sub">日影 · 生活流 · 单片</span></div><span class="r-val">47,316</span></li>
+        <li><div><span class="r-name">小镇问答王</span><span class="r-sub">韩综 · 知识问答 · 每周五更新</span></div><span class="r-val">41,725</span></li>
+        <li><div><span class="r-name">夜班书店</span><span class="r-sub">韩剧 · 都市情感 · 全 12 集</span></div><span class="r-val">38,904</span></li>
+        <li><div><span class="r-name">雾港旅人 剧场版</span><span class="r-sub">日影 · 动画剧场版 · 单片</span></div><span class="r-val">33,612</span></li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="side-col">
+    <div class="side-card">
+      <h3>今日更新 <span>11-25</span></h3>
+      <ul class="side-list">
+        <li><span class="num">1</span><a href="/#updates">静海回声 第 8 集<span class="s-meta">09:30 · 双线合流</span></a></li>
+        <li><span class="num">2</span><a href="/#updates">南山食堂 第二季 全 10 集<span class="s-meta">08:10 · 一次放出</span></a></li>
+        <li><span class="num">3</span><a href="/#updates">东京深夜电台 本周企划<span class="s-meta">昨天 21:10</span></a></li>
+        <li><span class="num">4</span><a href="/#updates">寒露之约 第 11 集<span class="s-meta">昨天 18:40</span></a></li>
+        <li><span class="num">5</span><a href="/#updates">白色台阶 第 6 集<span class="s-meta">11 月 23 日</span></a></li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h3>条目时间线</h3>
+      <ul class="timeline">
+        <li><time>11 月 25 日</time>静海回声第 8 集上线，双线合流。</li>
+        <li><time>11 月 23 日</time>冬季档日剧 6 部确认 12 月开播。</li>
+        <li><time>11 月 20 日</time>小镇问答王公布冬季特别篇规则。</li>
+        <li><time>11 月 18 日</time>夜班书店全 12 集完结。</li>
+        <li><time>11 月 15 日</time>雾港旅人剧场版补简体字幕。</li>
+        <li><time>11 月 3 日</time>春天不回信补全导演前作对照表。</li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h3>条目可信度分层 <span>说明</span></h3>
+      <ul class="trust-list">
+        <li><span>制作方与播出档期已核对</span><b class="lv">高</b></li>
+        <li><span>集数与更新进度已核对</span><b class="lv">高</b></li>
+        <li><span>评分来自社区聚合</span><b>中</b></li>
+        <li><span>看点描述为主观整理</span><b>中</b></li>
+        <li><span>未核实的外部传闻</span><b>不入库</b></li>
+      </ul>
+    </div>
+
+    <div class="side-card side-quote">
+      <h3>观众怎么说</h3>
+      <p>“古装剧我一般先看前 4 集能不能撑住人物关系，撑不住就弃。称谓交代不清楚的，后面基本也理不顺。”</p>
+      <span class="who">—— 杨枝甘露少糖 · 11 月 22 日</span>
+    </div>
+
+    <div class="side-card">
+      <h3>本周编辑选择</h3>
+      <ul class="side-list">
+        <li><a href="/#pick">春天不回信<span class="s-meta">日影 · 生活流 · 128 分钟</span></a></li>
+        <li><a href="/#pick">最后一班渡轮<span class="s-meta">韩影 · 犯罪现实 · 114 分钟</span></a></li>
+        <li><a href="/#pick">雾港旅人 剧场版<span class="s-meta">日影 · 动画 · 106 分钟</span></a></li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-about">
+        <div class="footer-brand">
+          <svg width="30" height="30" viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="2" y="2" width="44" height="44" rx="12" fill="#1f4fd8"/>
+            <path d="M20 15.5 34 24 20 32.5Z" fill="#fff"/>
+            <circle cx="14" cy="24" r="3.2" fill="#ffd76a"/>
+          </svg>
+          <strong>日韩诚人免费观看</strong>
+        </div>
+        <p>按类型、档期与口碑整理日韩剧集、电影与综艺条目，写明每条内容是什么、适合谁看、更新到哪一集。</p>
+        <p>数据基准日 2026 年 11 月 25 日，条目信息随播出进度持续修订。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="/#pick">精选片单</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#category">类型分类</a></li>
+          <li><a href="/#rank">热门榜单</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>阅读入口</h4>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观看顺序</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">社区评论</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>延伸方向</h4>
+        <ul>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#overview">内容概览</a></li>
+          <li><a href="/#top">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="disclaimer">
+        <p style="margin:0 0 6px">本站为日韩影视内容索引与条目整理站点，仅提供类型、档期、更新进度等信息描述，不提供任何影视资源的存储、上传或播放服务。条目评分与热度为社区聚合示例数据。</p>
+        <p style="margin:0">© 2026 日韩诚人免费观看 · 条目索引整理</p>
+      </div>
+      <div>内容基准日：2026-11-25</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var navToggle = document.getElementById('navToggle');
+  var mainNav = document.getElementById('mainNav');
+  if(navToggle && mainNav){
+    navToggle.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // 站内搜索筛选
+  var input = document.getElementById('searchInput');
+  var hint = document.getElementById('searchHint');
+  var grid = document.getElementById('pickGrid');
+
+  function collectItems(){
+    var list = [];
+    if(!grid) return list;
+    var cards = grid.querySelectorAll('.card');
+    cards.forEach(function(card){
+      var title = card.querySelector('h3');
+      var point = card.querySelector('.card-point');
+      var tags = card.querySelectorAll('.card-meta .tag');
+      var kw = [];
+      tags.forEach(function(t){ kw.push(t.textContent.trim()); });
+      list.push({
+        el: card,
+        title: title ? title.textContent.trim() : '',
+        text: (title ? title.textContent : '') + ' ' + (point ? point.textContent : '') + ' ' + kw.join(' ')
+      });
+    });
+    return list;
+  }
+  var items = collectItems();
+
+  function runSearch(q){
+    q = (q || '').trim().toLowerCase();
+    if(!hint) return;
+    if(!q){
+      hint.classList.remove('is-open');
+      hint.innerHTML = '';
+      items.forEach(function(it){ it.el.style.display = ''; });
+      return;
+    }
+    var matched = items.filter(function(it){
+      return it.text.toLowerCase().indexOf(q) > -1;
+    });
+    items.forEach(function(it){ it.el.style.display = 'none'; });
+    matched.forEach(function(it){ it.el.style.display = ''; });
+    if(matched.length === 0){
+      hint.innerHTML = '<div class="empty">没有找到与“' + q.replace(/</g,'&lt;') + '”匹配的条目，试试“悬疑”“美食”“电影”。</div>';
+    }else{
+      hint.innerHTML = matched.slice(0,6).map(function(it){
+        return '<a href="/#pick">' + it.title + '</a>';
+      }).join('');
+    }
+    hint.classList.add('is-open');
+  }
+
+  if(input){
+    var timer = null;
+    input.addEventListener('input', function(){
+      clearTimeout(timer);
+      timer = setTimeout(function(){ runSearch(input.value); }, 160);
+    });
+    input.addEventListener('focus', function(){
+      if(input.value.trim()) runSearch(input.value);
+    });
+    document.addEventListener('click', function(e){
+      if(hint && !hint.contains(e.target) && e.target !== input){
+        hint.classList.remove('is-open');
+      }
+    });
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){ hint.classList.remove('is-open'); input.blur(); }
+    });
+  }
+
+  // 随机看一部
+  var randomBtn = document.getElementById('randomPick');
+  if(randomBtn && grid){
+    randomBtn.addEventListener('click', function(){
+      var cards = grid.querySelectorAll('.card');
+      if(!cards.length) return;
+      var pick = cards[Math.floor(Math.random() * cards.length)];
+      pick.scrollIntoView({behavior:'smooth', block:'center'});
+      pick.style.transition = 'box-shadow .3s';
+      pick.style.boxShadow = '0 0 0 3px #1f4fd8';
+      setTimeout(function(){ pick.style.boxShadow = ''; }, 1600);
+    });
+  }
+})();
+</script>
+</body>
+              </html>
